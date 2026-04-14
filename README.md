@@ -24,15 +24,15 @@ sudo ovs-ofctl dump-flows s1
 
 
 Expected Output
-MAC Address Learning
+1.MAC Address Learning
 Controller logs show:
 Learned MAC XX:XX:XX:XX:XX:XX on port X
-Packet Forwarding Behavior
+2.Packet Forwarding Behavior
 First packet → Flooded
 Subsequent packets → Direct forwarding
-Flow Rule Installation
+3.Flow Rule Installation
 Flow table entries appear:
 in_port=X,dl_dst=MAC → output:Y
-Network Performance
+4.Network Performance
 Reduced latency after learning
 Improved throughput (iperf results)
